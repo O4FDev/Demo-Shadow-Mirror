@@ -12,6 +12,8 @@ def convertImage():
     ret, img = cap.read()
     img = cv2.resize(img, (600, 600))
 
+    # img = cv2.imread("Testing 1.png")
+
     sub_group_size = 10
     sub_group_total_y = img.shape[0] // sub_group_size
     sub_group_total_x = img.shape[1] // sub_group_size
